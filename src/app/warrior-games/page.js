@@ -5,23 +5,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faMapMarkerAlt, faMedal, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 export default function WarriorGames() {
-  const [theme, setTheme] = useState('dark');
+//   const [theme, setTheme] = useState('dark');
 
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme]);
+//   useEffect(() => {
+//     document.documentElement.setAttribute('data-theme', theme);
+//   }, [theme]);
 
-  const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'emerald' : 'dark');
-  };
+//   const toggleTheme = () => {
+//     setTheme(theme === 'dark' ? 'emerald' : 'dark');
+//   };
 
   return (
     <div className="min-h-screen bg-base-100 text-base-content">
-      <Head>
+      {/* <Head>
         <title>Warrior Games - First Nations Consulting LLC</title>
         <meta name="description" content="Warrior Games - Celebrating the strength and resilience of our wounded warriors" />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </Head> */}
 
       <header className="navbar bg-base-200">
         <div className="flex-1">
@@ -83,7 +83,7 @@ export default function WarriorGames() {
         </section>
 
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-          {['Archery', 'Cycling', 'Track & Field', 'Wheelchair Basketball'].map((sport, index) => (
+          {['Archery', 'Cycling', 'Track & Field', 'Wheelchair Basketball', 'Precision Air Sports', 'Wheelchair Rugby', 'Golf', 'Swimming', 'Power-Lifting', 'Indoor Rowing', 'Air Sports',  'Sitting Volleyball'].map((sport, index) => (
             <div key={index} className="card bg-base-200 shadow-xl">
               <div className="card-body items-center text-center">
                 <FontAwesomeIcon icon={faMedal} className="h-8 w-8 mb-2" />

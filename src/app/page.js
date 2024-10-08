@@ -27,11 +27,11 @@ export default function Home() {
                 Government Contracting
               </h1>
               <p className="pt-6 lg:pt-10">
-                In a world of regulations and greed,{" "}
+                Blah blah blah this is some filler text{" "}
                 <span className="dark:text-white text-accent-content font-bold">
-                  we are changing the game.
+                  that will be changed.
                 </span>{" "}
-                No more backroom deals, no more shady contracts. We are here to
+                No more short sentences, no more tiny text. We are here to
                 bring{" "}
                 <span className="dark:text-white text-accent-content font-bold">
                   transparency{" "}
