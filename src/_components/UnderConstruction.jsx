@@ -22,10 +22,10 @@ export default function UnderConstruction() {
     <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
       {/* Background Logo */}
       {/* <LogoComponent width="400px" height="400px" className="absolute inset-0 object-cover z-0" /> */}
-      <div className="z-10 absolute inset-0 flex items-center justify-center bg-slate-300 opacity-5">
+      {/* <div className="z-10 absolute inset-0 flex items-center justify-center bg-slate-300 opacity-5"> */}
         {/* <img src="/placeholder.svg?height=400&width=400" alt="Company Logo" className= /> */}
-        <LogoComponent width="400px" height="400px" className="w-full h-full object-contain" />
-      </div>
+        {/* <LogoComponent width="200px" height="200px" className="w-full h-full object-contain" /> */}
+      {/* </div> */}
 
       <div className="z-0 bg-primary  dark:bg-base-200 p-8 rounded-lg shadow-xl max-w-md w-full">
         <h1 className="text-4xl font-bold text-center mb-6">Under Construction</h1>

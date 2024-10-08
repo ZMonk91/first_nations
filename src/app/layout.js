@@ -19,9 +19,9 @@ export default function RootLayout({ children }) {
   return (
     <html data-theme="emerald" lang="en" className="scroll-smooth snap-proximity snap-y min-w-screen-100">
       <body className={inter.className}>
-      <div className="drawer bg-base-300">
+      <div className="drawer  bg-base-300">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-          <div className="drawer-content flex flex-col">
+          <div className="drawer-content flex flex-col ">
             <div className="hidden lg:flex justify-center py-4">
               <ThemeToggle />
             </div>
@@ -64,14 +64,14 @@ export default function RootLayout({ children }) {
             {/* <section className="mb-4">{children}</section> */}
           </div>
           <div className="drawer-side">
-            <label htmlFor="my-drawer" className="drawer-overlay"></label>
+            <label htmlFor="my-drawer" className="drawer-overlay "></label>
             <ul className="menu p-4 w-80 h-full bg-base-200">
               <li><a href="/" className="dark:hover:text-white">Home</a></li>
               <li><a href="/services" className="dark:hover:text-white">Services</a></li>
               <li><a href="/warrior-games" className="dark:hover:text-white">Warrior Games</a></li>
               <li><a href="/contact" className="dark:hover:text-white">Contact Us</a></li>
               <li className="mt-auto">
-                <div className="flex justify-center py-4">
+                <div className="flex justify-center py-4 ">
                   <ThemeToggle />
                 </div>
               </li>
