@@ -12,7 +12,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="snap-y snap-mandatory h-screen overflow-y-scroll">
+    <main className="snap-y h-screen overflow-y-scroll">
       <section className="snap-start min-h-screen bg-base-100 w-full lg:w-5/6 mx-auto">
         <div className="hero min-h-screen">
           <div className="hero-content flex-col lg:flex-row-reverse">
@@ -22,11 +22,11 @@ export default function Home() {
               className="object-cover w-full h-64 lg:h-auto lg:w-1/2 max-w-lg mb-10 rounded-lg shadow-2xl"
             />
             <div>
-              <h1 className="text-4xl lg:text-5xl max-w-md-lg font-bold dark:text-white text-base-content">
+              <h1 className="text-5xl lg:text-6xl max-w-md-lg font-bold dark:text-white text-base-content">
                 Re<span className="text-primary">imagine</span> the world of
                 Government Contracting
               </h1>
-              <p className="pt-6 lg:pt-10">
+              <p className="pt-6 lg:pt-10 text-lg">
                 Blah blah blah this is some filler text{" "}
                 <span className="dark:text-white text-accent-content font-bold">
                   that will be changed.
@@ -42,17 +42,21 @@ export default function Home() {
                 </span>{" "}
                 to the world of government contracting.
               </p>
-              <button className="btn dark:text-white btn-primary btn-wide shadow-2xl mt-6 lg:mt-10 w-full lg:w-auto">
+              <a href="/services" className="btn dark:text-white btn-primary btn-wide text-xl shadow-2xl mt-6 lg:mt-10 w-full lg:w-auto">
                 Learn More
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="snap-start min-h-screen bg-accent w-full lg:w-5/6 lg:ml-auto">
+      <section className="snap-start min-h-screen bg-accent w-full lg:w-5/6 lg:ml-auto mt-20">
         <div className="flex min-h-screen py-10 px-4">
           <div className="mx-auto max-w-screen-lg text-center">
+
+            <h1 className="text-white mb-4 text-4xl lg:text-5xl font-extrabold tracking-tight leading-none dark:text-white">
+             Proud Supporters
+            </h1>
             <div className="max-w-xl mx-auto mt-10 py-10">
               <img
                 src="/WarriorGamesLogo.webp"
@@ -70,15 +74,22 @@ export default function Home() {
               Force, and Special Operations Command to compete in a variety of
               adaptive sports.
             </p>
-            <button className="btn btn-neutral btn-wide btn-lg w-full lg:w-auto">
+            <a href="/warrior-games" className="text-xl btn btn-neutral btn-wide btn-lg w-full lg:w-auto">
               Check it out
-            </button>
+            </a>
           </div>
         </div>
       </section>
 
-      <section className="snap-start min-h-screen bg-primary w-full lg:w-5/6">
-        <div className="py-10 px-4 min-h-screen flex flex-wrap justify-around items-center">
+      <section className="snap-start sm:min-h-screen lg:min-h-0 bg-primary w-full lg:w-5/6 mt-20">
+<div className="my-auto">
+      <h1 className="text-white pt-20 text-4xl lg:text-6xl font-extrabold tracking-tight leading-none dark:text-white text-center">
+              What We Offer
+            </h1>
+            </div>
+
+        <div className="px-4 min-h-screen flex flex-wrap justify-around items-center">
+          
           <div className="card card-compact bg-secondary-content w-full sm:w-64 shadow-xl mb-6">
             <figure>
               <FontAwesomeIcon
@@ -164,6 +175,8 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <a href="/services" className="btn btn-neutral-content btn-wide btn-lg w-full lg:w-auto text-xl"> Explore Our Services</a>
+          
         </div>
       </section>
     </main>

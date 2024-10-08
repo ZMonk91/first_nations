@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 
@@ -9,6 +9,13 @@ export default function Contact() {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const [charCount, setCharCount] = useState(0)
+
+  const MAX_CHARS = 512
+
+  useEffect(() => {
+    setCharCount(message.length)
+  }, [message])
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -19,6 +26,13 @@ export default function Contact() {
     setName('')
     setEmail('')
     setMessage('')
+  }
+
+  const handleMessageChange = (e) => {
+    const input = e.target.value
+    if (input.length <= MAX_CHARS) {
+      setMessage(input)
+    }
   }
 
   return (
@@ -99,13 +113,23 @@ export default function Contact() {
                 <label className="label" htmlFor="message">
                   <span className="label-text">Message</span>
                 </label>
-                <textarea
-                  id="message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  className="textarea textarea-bordered h-24"
-                  required
-                ></textarea>
+                <div className="relative">
+                  <textarea
+                    id="message"
+                    value={message}
+                    onChange={handleMessageChange}
+                    className="textarea textarea-bordered h-24 w-full"
+                    required
+                    maxLength={MAX_CHARS}
+                  ></textarea>
+                  <div 
+                    className={`absolute bottom-2 right-6 text-xs ${
+                      charCount === MAX_CHARS ? 'text-error' : 'text-base-content'
+                    }`}
+                  >
+                    {charCount}/{MAX_CHARS}
+                  </div>
+                </div>
               </div>
               <button type="submit" className="btn btn-primary">Send Message</button>
             </form>

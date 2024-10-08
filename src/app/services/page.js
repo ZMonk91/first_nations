@@ -44,7 +44,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div key={index} className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300">
               <div className="card-body items-center text-center">
-                <FontAwesomeIcon icon={service.icon} className="text-3xl text-primary mb-4" />
+                <FontAwesomeIcon icon={service.icon} className="lg:text-sm md:text-lg sm:text-sm max-w-20 text-primary mb-4" />
                 <h2 className="card-title text-xl mb-2">{service.title}</h2>
                 <p className="text-base-content text-sm">{service.description}</p>
               </div>

@@ -7,7 +7,7 @@ export default function Menu({children = []}) {
    children = children || [];
 
     return (
-<div className="drawer">
+<div className="drawer bg-base-300">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content flex flex-col">
             <div className="hidden lg:flex justify-center py-4">

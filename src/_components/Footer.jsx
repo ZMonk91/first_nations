@@ -2,32 +2,17 @@ import LogoComponent from "@/logo/LogoComponent";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-800 bg-base-300 text-slate-200 footer footer-center">
-      <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-start mb-8">
-       
-          <div className="md:text-right">
-            <div className="mb-4">
-              <p className="text-sm">
-                First Nations Consulting LLC is dedicated to bringing transparency and accountability to government contracting.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold text-slate-400 tracking-wider uppercase mb-2">
-                Contact
-              </h3>
-              <address className="not-italic text-sm">
-                <p>Phone: (227) 213-9266</p>
-                <p>Email: Info@FirstNationsLLC.com</p>
-              </address>
-            </div>
-            <div className="mb-2 md:mb-0">
-            <LogoComponent width="100px" height="auto" />
-          </div>
-          </div>
+    <footer className="bg-base-300 text-base-content">
+      <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center">
+          <LogoComponent width="120px" height="auto" className="mb-6" />
+          <p className="text-sm text-center max-w-md mb-8">
+            First Nations Consulting LLC is dedicated to providing transparency and accountability with government contracting.
+          </p>
+
         </div>
-        <div className="border-t border-slate-700 pt-8">
-          <p className="text-sm text-slate-400 text-center">
+        <div className="pt-8 border-t border-base-content/20">
+          <p className="text-sm text-center">
             &copy; {new Date().getFullYear()} First Nations Consulting LLC. All rights reserved.
           </p>
         </div>
