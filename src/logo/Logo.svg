@@ -17,7 +17,7 @@
  svg[data-color-mode="light"]g { fill: green; }
  </style>   
     <g transform="matrix(4.16667,0,0,4.16667,0,0)">
-        <g id="Front-Logo" serif:id="Front Logo" data-node-id="Logo" transform="matrix(0.416167,0,0,0.416167,-44.0157,-40.0822)">
+        <g id="Front-Logo" serif:id="Front Logo" data-node-id="Logo" fill="currentColor" transform="matrix(0.416167,0,0,0.416167,-44.0157,-40.0822)">
             <g id="Bottom-Trace-Tomahawk" serif:id="Bottom Trace Tomahawk" transform="matrix(-0.54728,0,0,0.54728,544.109,-103.86)">
                 <g transform="matrix(0.810428,-0.810428,0.792459,0.792459,-381.871,238.447)">
                     <path d="M198.018,518.837L198.018,544.439C198.018,559.885 206.998,557.239 185.501,557.239C185.501,557.239 162.071,557.251 159.332,557.239C143.662,557.169 146.14,560.449 146.815,544.439C146.855,543.49 146.815,518.837 146.815,518.837C146.815,506.016 146.795,506.037 159.332,506.037L185.501,506.037C197.912,506.037 198.018,506.145 198.018,518.837Z"/>

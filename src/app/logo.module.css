@@ -1,0 +1,8 @@
+/* Logo ID */
+.oceanBreeze [data-node-id="logo"] {
+    fill: green
+  }
+  
+  .sunsetGlow [data-node-id="logo"] {
+    fill: red
+  }
