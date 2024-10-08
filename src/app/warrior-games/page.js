@@ -1,6 +1,4 @@
-"use client"; // This file is a client-side script
-import React, { useState, useEffect } from 'react';
-import Head from 'next/head';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faMapMarkerAlt, faMedal, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
