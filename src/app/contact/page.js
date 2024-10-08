@@ -21,7 +21,7 @@ export default function Contact() {
     e.preventDefault()
     // Here you would typically send the form data to your server
     // For this example, we'll just simulate a successful submission
-    console.log('Form submitted:', { name, email, message })
+    console.log('Form submitted:', { name, email, message }) 
     setSubmitted(true)
     setName('')
     setEmail('')
@@ -65,10 +65,6 @@ export default function Contact() {
               <p className="flex items-center">
                 <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                 Aaron.Averre@FirstNationsLLC.com
-              </p>
-              <p className="flex items-center">
-                <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                (916) 607 - 7861
               </p>
             </div>
           </div>
