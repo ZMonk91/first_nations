@@ -2,12 +2,10 @@ import LogoComponent from "@/logo/LogoComponent";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-800 text-slate-200">
+    <footer className="bg-slate-800 bg-base-300 text-slate-200 footer footer-center">
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-start mb-8">
-          <div className="mb-6 md:mb-0">
-            <LogoComponent width="150px" height="auto" />
-          </div>
+       
           <div className="md:text-right">
             <div className="mb-4">
               <p className="text-sm">
@@ -23,6 +21,9 @@ export default function Footer() {
                 <p>Email: Info@FirstNationsLLC.com</p>
               </address>
             </div>
+            <div className="mb-2 md:mb-0">
+            <LogoComponent width="100px" height="auto" />
+          </div>
           </div>
         </div>
         <div className="border-t border-slate-700 pt-8">

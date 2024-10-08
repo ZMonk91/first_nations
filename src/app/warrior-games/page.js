@@ -27,11 +27,7 @@ export default function WarriorGames() {
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-xl">Warrior Games</a>
         </div>
-        <div className="flex-none">
-          <button className="btn btn-square btn-ghost" onClick={toggleTheme}>
-            <FontAwesomeIcon icon={faInfoCircle} className="h-5 w-5" />
-          </button>
-        </div>
+
       </header>
 
       <main className="container mx-auto px-4 py-8">
@@ -98,11 +94,6 @@ export default function WarriorGames() {
         </section>
       </main>
 
-      <footer className="footer footer-center p-4 bg-base-300 text-base-content">
-        <div>
-          <p>© 2024 First Nations Consulting LLC. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 }
