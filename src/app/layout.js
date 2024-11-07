@@ -56,12 +56,13 @@ export default function RootLayout({ children }) {
                 <li><a href="/contact" className="dark:hover:text-white">Contact Us</a></li>
               </ul>
             </nav>
-            <section className="mb-4 dark:bg-base-100 bg-base-300">
-              <UnderConstruction />
-            </section>
+            {/* Replace with this to toggle under construction */}
+            {/* <section className="mb-4 dark:bg-base-100 bg-base-300"> */}
+              {/* <UnderConstruction /> */}
+            {/* </section> */}
             
-            {/* Replace with this to see full site */}
-            {/* <section className="mb-4">{children}</section> */}
+            {/* Replace with this to see toggle site */}
+            <section className="mb-4">{children}</section>
           </div>
           <div className="drawer-side">
             <label htmlFor="my-drawer" className="drawer-overlay "></label>
