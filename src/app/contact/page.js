@@ -51,10 +51,10 @@ export default function Contact() {
                 <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                 Brent.Sixkiller@FirstNationsLLC.com
               </p>
-              <p className="flex items-center">
+              {/* <p className="flex items-center">
                 <FontAwesomeIcon icon={faPhone} className="mr-2" />
                 (227) 213 - 9266
-              </p>
+              </p> */}
             </div>
           </div>
           
