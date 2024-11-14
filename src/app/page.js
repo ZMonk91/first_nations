@@ -27,11 +27,11 @@ export default function Home() {
                 Government Contracting
               </h1>
               <p className="pt-6 lg:pt-10 text-lg">
-                Blah blah blah this is some filler text{" "}
+                First Nations Consulting is passionate about providing the  {" "}
                 <span className="dark:text-white text-accent-content font-bold">
-                  that will be changed.
+                  new standard
                 </span>{" "}
-                No more short sentences, no more tiny text. We are here to
+                in service excellence. We are here to
                 bring{" "}
                 <span className="dark:text-white text-accent-content font-bold">
                   transparency{" "}
